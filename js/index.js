@@ -1,3 +1,5 @@
+//Mobile menu functionality
+
 const menuControls = document.getElementById("menu-icons");
 const hamburger = document.getElementById("hamburger");
 const closeMenu = document.getElementById("close-menu");
@@ -17,3 +19,29 @@ menuControls.addEventListener("click", () => {
     mobileMenu.classList.replace("slide-in", "slide-out");
   }
 });
+
+//End of Mobile Menu functionality
+
+//Automatic changing image functionality
+
+const slidingImages = [
+  "assets/feed-1.jpg",
+  "assets/feed-2.jpg",
+  "assets/feed-3.jpg",
+  "assets/feed-4.jpg",
+];
+const slidingImageHolder = document.querySelector(".banner-image");
+
+let i = 0;
+function changeImage() {
+  if (i === slidingImages.length - 1) {
+    i = 0;
+  } else {
+    i++;
+  }
+  slidingImageHolder.src = slidingImages[i];
+}
+
+setInterval(changeImage, 3000);
+
+//End of Automatic changing image functionality
