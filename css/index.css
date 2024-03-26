@@ -144,11 +144,50 @@ nav a.last-link{
 
 
 
-nav a:hover{
+nav li:hover{
    transition: all;
    transition-duration: 400ms;
    background-color: rgba(14, 114, 33, 0.5);
 }
+
+
+/* Desktop Navbar styles */
+
+
+nav.desktop-links{
+   display: none;
+   width: 70%;
+   max-width: 500px;
+}
+
+nav.desktop-links ul{
+   list-style: none;
+   display: flex;
+   padding: 0;
+   width: 100%;
+   justify-content: space-between;
+}
+
+
+nav.desktop-links li{
+   border: none;
+   padding:0;
+   flex-grow: 2;
+}
+
+
+
+
+nav.desktop-links a {
+   display: block;
+   padding: 25px 10px;
+   border: none;
+
+
+}
+
+
+/* End of Desktop Navbar styles */
 
 /* Banner Section */
 
@@ -203,4 +242,23 @@ nav a:hover{
 
 .banner h1{
    text-align: center;
+}
+
+
+
+
+@media screen and (min-width: 768px){
+
+   .mobile-menu, .menu-icons{
+      display: none;
+   }
+
+   nav.desktop-links{
+      display: block;
+   }
+
+   header{
+      padding: 0 0 0 15px;
+   }
+   
 }
