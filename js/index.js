@@ -25,10 +25,10 @@ menuControls.addEventListener("click", () => {
 //Automatic changing image functionality
 
 const slidingImages = [
-  "assets/feed-1.jpg",
-  "assets/feed-2.jpg",
-  "assets/feed-3.jpg",
-  "assets/feed-4.jpg",
+  "assets/slide-1.jpg",
+  "assets/slide-2.jpg",
+  "assets/slide-3.jpg",
+  "assets/slide-4.jpg",
 ];
 const slidingImageHolder = document.querySelector(".banner-image");
 
@@ -45,3 +45,12 @@ function changeImage() {
 setInterval(changeImage, 3000);
 
 //End of Automatic changing image functionality
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 10) {
+    document.querySelector("header").style.backgroundColor = "rgb(9, 170, 38)";
+  } else {
+    document.querySelector("header").style.backgroundColor =
+      "rgba(9, 170, 38, 0.8)";
+  }
+});

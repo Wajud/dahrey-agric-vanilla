@@ -1,6 +1,7 @@
 :root {
    --background-green: #17D73B;
    --white: #ffffff;
+   --yellow: rgb(228, 228, 84);
  }
 
 *{
@@ -13,7 +14,7 @@ body{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   overflow: hidden;
+   overflow-x: hidden;
 }
 
 img{
@@ -87,7 +88,8 @@ header{
    display: flex;
    justify-content: space-between;
    align-items: center;
-   background-color: rgba(23, 215, 59, 0.8);
+   /* background-color: rgba(23, 215, 59, 0.8); */
+   background-color: rgba(9, 170, 38, 0.8);
    position: fixed;
    top: 0;
    left: 0;
@@ -107,6 +109,7 @@ header .menu-icons{
    width: 30px;
    height: 30px;
    cursor: pointer;
+   margin-right: 10px;
 }
 
 .close-menu{
@@ -147,7 +150,7 @@ nav a.last-link{
 nav li:hover{
    transition: all;
    transition-duration: 400ms;
-   background-color: rgba(14, 114, 33, 0.5);
+   background-color: rgba(8, 80, 21, 0.5);
 }
 
 
@@ -180,8 +183,10 @@ nav.desktop-links li{
 
 nav.desktop-links a {
    display: block;
-   padding: 25px 10px;
+   padding: 20px 10px;
    border: none;
+   font-weight: 500;
+   font-size: 20px;
 
 
 }
@@ -193,7 +198,7 @@ nav.desktop-links a {
 
 .banner{
    width: 100%;
-   height: 80vh;
+   height: 100vh;
    overflow: hidden;
    position: relative;
    z-index: 2;
@@ -201,7 +206,8 @@ nav.desktop-links a {
 
 .banner-image{
    width: 100%;
-   height: 80vh;
+   height: 100vh;
+   object-fit: cover;
    position: absolute;
    z-index: 2;
    top: 0;
