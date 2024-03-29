@@ -26,7 +26,8 @@ menuControls.addEventListener("click", () => {
 
 const slidingImages = [
   "assets/slide-1.jpg",
-  "assets/slide-2.jpg",
+  "assets/palm-1.jpg",
+  "assets/grassland-1.jpg",
   "assets/slide-3.jpg",
   "assets/slide-4.jpg",
 ];
