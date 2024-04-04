@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 :root {
    --background-green: #17D73B;
    --white: #ffffff;
    --yellow: rgb(228, 228, 84);
+   --footer-color: rgba(231, 227, 227, 0.2);
+   --button_green: green;
  }
 
 *{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   font-family: "Fira Sans", sans-serif;
 }
 
 body{
@@ -38,6 +44,47 @@ a{
 .show{
    display: block;
 }
+
+.green-button {
+   color: white;
+   border: 2px solid green;
+   border-radius: 5px;
+   display: block;
+   width: fit-content;
+   padding: 10px 10px;
+   background-color: var(--button_green);
+}
+
+
+.green-button:hover {
+   transition: all;
+   transition-duration: 500ms;
+   color: green;
+   background-color: white;
+   box-shadow: 0 0 1px 1px var(--button_green);
+}
+
+
+.white-button {
+   color: green;
+   border: 2px solid green;
+   border-radius: 5px;
+   display: block;
+   width: fit-content;
+   padding: 10px 10px;
+   background-color: white;
+}
+
+
+.white-button:hover {
+   transition: all;
+   transition-duration: 500ms;
+   color: white;
+   background-color: var(--button_green);
+   box-shadow: 0 0 1px 1px var(--button_green);
+}
+
+
 
 
 /**End of Utility Classes**/
@@ -251,6 +298,10 @@ nav.desktop-links a {
 }
 
 
+footer{
+   background-color: var(--footer-color);
+}
+
 
 
 @media screen and (min-width: 768px){
@@ -268,3 +319,5 @@ nav.desktop-links a {
    }
    
 }
+
+
