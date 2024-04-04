@@ -12,6 +12,13 @@ p{
 }
 
 
+/* Nav Colors */
+nav a{
+   color: white;
+}
+
+/* End of Nav Colors */
+
 /* Section 1 */
 
 .section-1{
@@ -110,9 +117,10 @@ p{
    justify-content: center;
    gap: 15px;
    position: absolute;
-   bottom: -40px;
+   bottom: -60px;
    left: 50%;
    transform: translateX(-50%);
+   /* margin-bottom: -100px; */
 }
 
 .controls div{
@@ -130,6 +138,10 @@ p{
 .next{
    clip-path: polygon(0 0, 0 100%, 100% 50%);
 
+}
+
+footer{
+   margin-top: 20px;
 }
 
 

@@ -102,14 +102,18 @@ body{
    background-color: white;
    padding: 40px 0px;
    width: 90%;
-   margin: 0 auto;
+   margin: 150px auto 0;
 }
+
 .story .title{
    text-align: center;
    width: fit-content;
    margin: 0 auto 50px;
 }
 
+.title p{
+   margin-top: 10px;
+}
 .story h2{
    margin-bottom: 3px;
 }
@@ -142,6 +146,7 @@ button{
 
 .btn-container{
    display: flex;
+   margin-bottom: -120px;
    
 }
 
@@ -203,6 +208,13 @@ button{
       gap: 15px;
    }
    
+
+   .story{
+     
+      margin: 40px auto 0;
+   }
+
+
 }
 
 /* End of Media Query */

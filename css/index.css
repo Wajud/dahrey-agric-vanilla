@@ -16,6 +16,11 @@
    font-family: "Fira Sans", sans-serif;
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
+ 
 body{
    margin: 0;
    padding: 0;
@@ -165,7 +170,7 @@ header .menu-icons{
 
 
 nav.mobile-menu{
-   position: absolute;
+   position: fixed;
    z-index: 10;
    left: -100%;
    width: 100%;
@@ -297,10 +302,120 @@ nav.desktop-links a {
    text-align: center;
 }
 
+/* Footer */
 
 footer{
    background-color: var(--footer-color);
 }
+
+footer {
+   margin-top: 150px;
+   padding: 50px 20px;
+   position: relative;
+}
+
+footer p, footer a{
+   color: gray;
+}
+
+
+footer svg{
+   width: 15px;
+   height: 15px;
+
+}
+
+.footer-wrap > .contact{
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   margin-top: 30px;
+   margin-left: 15px;
+}
+
+
+
+footer .call, footer .email, footer .instagram, footer .location{
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   margin-bottom: 5px;
+}
+
+footer .location{
+   align-items: flex-start;
+}
+
+footer .address-description{
+   font-size: 14px;
+   line-height: 20px;
+}
+
+
+/* footer a{
+   color: black;
+} */
+
+footer .instagram-icon{
+   width: 15px;
+   height: 15px;
+   object-fit: cover;
+}
+
+
+footer .quick-links-container{
+   padding-left: 15px;
+   margin-top: 30px;
+}
+
+footer .quick-links{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   margin-top: 15px;
+}
+
+.quick-links div{
+   display: flex;
+   gap: 10px;
+   align-items: center;
+}
+
+footer .quick-links a{
+   color: rgb(92, 92, 241);
+}
+
+.copyright{
+   text-align: center;
+   background-color: white;
+   color: gray;
+   padding: 15px 25px;
+   line-height: 20px;
+}
+
+
+/* End of Footer */
+
+
+/* Back to top arrow */
+
+.to-top{
+   position: fixed;
+   right: 20px;
+   bottom: -150px;
+   z-index: 5;
+   width: 50px;
+   height: 50px;
+   background-color: white;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+/* End of Back to top */
 
 
 
@@ -317,6 +432,20 @@ footer{
    header{
       padding: 0 0 0 15px;
    }
+
+
+   .footer-wrap{
+      width: 85%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 30px;
+   }
+
+   .footer-wrap img{
+      margin-top: 15px;
+   }
+   
    
 }
 

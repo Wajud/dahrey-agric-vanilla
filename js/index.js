@@ -55,3 +55,9 @@ window.addEventListener("scroll", () => {
       "rgba(9, 170, 38, 0.8)";
   }
 });
+
+// Get year dynamically
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// End of Get year dynamically
