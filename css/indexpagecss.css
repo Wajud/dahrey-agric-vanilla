@@ -6,6 +6,10 @@
 }
 
 
+p{
+   font-size: 14px;
+}
+
 
 /* Banner Section */
 
@@ -18,8 +22,12 @@
    text-align: center;
 }
 
+.banner p{
+   color: white;
+}
+
 .content-wrap p{
-   font-size: 18px;
+   font-size: 14px;
    line-height: 28px;
 }
 
@@ -32,7 +40,7 @@
    text-align: center;
    line-height: 1.4;
    padding: 0 20px;
-   margin-bottom: 20px;
+   margin-bottom: 0px;
 }
 
 .company-name {
@@ -41,7 +49,7 @@
 
 .section-1 p {
    color: gray;
-   font-size: 18px;
+   font-size: 14px;
    padding: 0 10px;
    text-align: center;
    line-height: 1.6;
@@ -113,10 +121,70 @@
    height: 15px;
 }
 
+/* Team Section */
+
+.team-section{
+   background-color: rgba(248, 248, 248, 0.4);
+   padding: 40px 0 100px;
+   margin-top: 100px;
+   margin-bottom: -150px;
+}
+
+.team-section .content-wrap{
+   width: 90%;
+   margin: 50px auto 0;
+   margin-bottom: -40px;
+   padding:40px 0 10px;
+   text-align: center;   
+}
 
 
 
-/* Media Query */
+.team-section h2, .team-section p, .team-section a{
+   color: gray;
+}
+
+
+
+.team-section h2{
+   margin: 80px 0 20px;
+   text-align: center;
+}
+
+.team-section img{
+   border-radius: 5px;
+   width: 100%;
+   height: 300px;
+   object-fit: cover;
+}
+
+.team-section p{
+   font-size: 14px;
+   margin: 30px 0 ;
+   padding: 5px;
+}
+
+
+.team-section .green-button{
+   margin: 50px auto 0;
+
+}
+
+.team-section a{
+   color: white;
+}
+
+.team-section a:hover{
+   color: green;
+}
+
+
+/* End of  Team Section */
+
+
+
+
+/* 768px Media Query */
 
 @media screen and (min-width: 768px) {
 
@@ -150,7 +218,24 @@
 
    }
 
+ 
+
 
 }
 
-/* End of Media Query */
+/* End of 768px Media Query */
+
+
+/* End of 768px Media Query */
+
+@media screen and (min-width: 1024px){
+ 
+   .team-section .content-wrap{
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 30px;
+
+   }
+}
+
