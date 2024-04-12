@@ -1,19 +1,20 @@
 /* Section 1 */
 
 
-.section-1{
+.section-1 {
    height: 90vh;
    overflow: hidden;
    position: relative;
    background-color: gainsboro;
 }
 
-.section-1 img{
+.section-1 img {
    width: 100%;
    height: 100%;
    object-fit: cover;
 }
-.section-1 div.text{
+
+.section-1 div.text {
    position: absolute;
    top: 0%;
    height: 100%;
@@ -22,17 +23,17 @@
    flex-direction: column;
    justify-content: center;
    text-align: center;
-   background-color: rgba(0,0,0,0.6);
+   background-color: rgba(0, 0, 0, 0.6);
 
 }
 
-.section-1 h1{
+.section-1 h1 {
    color: white;
    width: 80%;
    margin: 0 auto 15px;
 }
 
-.section-1 p{
+.section-1 p {
    color: rgb(231, 228, 228);
    line-height: 22px;
    font-size: 14px;
@@ -40,7 +41,7 @@
    margin: 0 auto;
 }
 
-.section-1 svg{
+.section-1 svg {
    position: absolute;
    bottom: 5%;
    left: 50%;
@@ -52,37 +53,43 @@
 
 @keyframes pumping {
 
-0%{
-   bottom: 5%;
-}
+   0% {
+      bottom: 5%;
+   }
 
-30%{
-   bottom: 6%
-}
+   30% {
+      bottom: 6%
+   }
 
-60%{
-   bottom: 6%
-}
+   60% {
+      bottom: 6%
+   }
 
-100%{
-   bottom: 5%
-}
+   100% {
+      bottom: 5%
+   }
 
 }
 
 /* End of Section-1 */
 
 /* Section 2 */
+.swiper{
+   /* max-width: 95%; */
+   width: 100%;
+   height: 300px;
+   color: black;
+}
 
-.section-2{
+.section-2 {
    padding: 60px 0 40px;
 }
 
-.section-2 h2{
+.section-2 h2 {
    text-align: center;
 }
 
-.section-2  .container{
+.section-2 .container {
    width: 90%;
    margin: 50px auto;
    display: flex;
@@ -90,39 +97,130 @@
    gap: 40px;
 }
 
-.crop{
+.crop {
    background-color: rgba(247, 245, 245, 0.6);
    border-radius: 5px;
    overflow: hidden;
 }
 
-.crop img{
+.crop img {
    width: 100%;
    height: 300px;
    object-fit: cover;
- 
+
 }
 
-.crop h3{
+.crop .title-container {
+   display: flex;
+   justify-content: space-between;
+
+}
+
+.crop .title-container>div {
+   display: flex;
+   margin-top: 12px;
+   padding-right: 20px;
+}
+
+.crop .direction-holder {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 25px;
+   height: 25px;
+   border: 1px solid gray;
+   background-color: rgb(216, 212, 212);
+   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+   border-radius: 50%;
+   margin: 0 5px;
+}
+
+.crop p.back {
+   width: 10px;
+   height: 15px;
+   clip-path: polygon(100% 0, 0 50%, 100% 100%);
+   background-color: gray;
+   transform: translate(-6px, 9px);
+}
+
+
+.crop p.next {
+   width: 10px;
+   height: 15px;
+   clip-path: polygon(0 0, 0 100%, 100% 50%);
+   background-color: gray;
+   transform: translate(-3px, 9px);
+}
+
+.crop h3 {
    margin: 10px 10px 5px;
 }
 
-.crop p{
+.crop p {
    margin-left: 10px;
    margin-bottom: 20px;
 }
 
-.crop a{
+.crop a {
    display: block;
    margin: 20px 10px 40px;
 
 }
 
+.crop .contact-bg {
+   background-image: linear-gradient(to right, red, blue 60%, yellow 80%);
+   width: fit-content;
+   height: 100px;
+   padding: 2px;
+   border-radius: 5px;
+   display: flex;
+   margin: 20px;
+   overflow: hidden;
+   margin-left: 10px;
+
+}
+
+.crop .contact {
+   background-color: white;
+   border-radius: 5px;
+   padding: 0;
+}
+
+.crop .contact p {
+   padding: 10px;
+   border-bottom: 1px solid gray;
+   width: 100%;
+   margin: 0;
+   font-weight: 500;
+   margin-bottom: 0px;
+}
+
+.crop .socials {
+   display: flex;
+   gap: 2px;
+   margin-top: -5px;
+}
+
+.crop .contact img {
+   width: 30px;
+   height: 30px;
+   object-fit: cover;
+   border-radius: 50%;
+}
+
+.crop .contact img.instagram-icon {
+   border-radius: 0%;
+   width: 25px;
+   height: 25px;
+}
+
+
+
 /* End of Section 2 */
 
 /* Section 3 */
 
-.section-3{
+.section-3 {
    margin-top: -40px;
 }
 
@@ -131,20 +229,21 @@
 
 /* Footer  */
 
-footer{
+footer {
    margin-top: 30px;
 }
 
 /* End of Footer  */
 @media screen and (min-width: 768px) {
-   .section-2  .container{
+   .section-2 .container {
       flex-direction: row;
       justify-content: center;
       flex-wrap: wrap;
       gap: 20px;
    }
 
-   .container > *{
-      width: 300px;
+   .container>* {
+      width: 350px;
+      margin-bottom: 10px;
    }
 }
