@@ -1,7 +1,7 @@
 // Mission and Vision
 
 const mission =
-  "Our mission is to revolutionize agriculture through sustainable practices and high-quality products. We prioritize environmental care and innovation in our farming techniques to ensure eco-friendly and efficient operations. We set to lead the way in agriculture by setting high standards for quality and ethics. At Dahrey Agric Empire, we believe in doing well by doing good. Our mission goes beyond just making a profit— it is about making a positive impact on the world around us.";
+  "Our mission is to revolutionize agriculture through sustainable practices and high-quality products. We prioritize environmental care and innovation in our farming techniques to ensure eco-friendly and efficient operations. Our commitment extends beyond profit, aiming to make a positive impact on local communities and the environment.";
 
 const vision =
   "Our vision at Dahrey Agric Empire is to cultivate a future where sustainable agriculture thrives as a beacon of innovation and environmental stewardship. We aspire to be the gold standard in the agricultural industry, setting new benchmarks for excellence agriculture and animals production while championing ethical practices and community empowerment. Together, we envision a world where our efforts not only nourish bodies but also nurture the planet for generations to come.";
