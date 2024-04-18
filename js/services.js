@@ -21,6 +21,13 @@ const allImages = {
     "../assets/palm-oil.jpeg",
     "../assets/palm-oil-production.jpeg",
   ],
+
+  garriImages: ["../assets/garri-1.jpg", "../assets/garri-2.jpg"],
+  goatAndCattleImages: [
+    "../assets/cattle-rearing-1.jpg",
+    "../assets/cattle-rearing-2.jpg",
+    "../assets/cattle-rearing-3.jpg",
+  ],
 };
 
 backBtns.forEach((backBtn) => {
