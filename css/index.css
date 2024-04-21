@@ -394,6 +394,7 @@ footer .facebook{
 
 
 
+
 footer .quick-links-container{
    padding-left: 15px;
    margin-top: 30px;
@@ -481,6 +482,11 @@ footer .quick-links a{
    footer .instagram-icon{
       transform: translateY(-7px);
    }
+
+   
+footer .facebook-icon{
+   margin-top: -4px;
+}
    
    
 }
