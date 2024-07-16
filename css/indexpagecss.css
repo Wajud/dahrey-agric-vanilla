@@ -22,13 +22,17 @@ p{
    text-align: center;
 }
 
-.banner p{
-   color: white;
+.banner h1{
+   font-size: 3em;
+   text-align: center;
 }
+
 
 .content-wrap p{
    font-size: 14px;
    line-height: 28px;
+   color: white;
+   font-size: 1.1em;
 }
 
 .section-1 {
@@ -41,6 +45,7 @@ p{
    line-height: 1.4;
    padding: 0 20px;
    margin-bottom: 0px;
+ 
 }
 
 .company-name {

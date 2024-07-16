@@ -24,26 +24,26 @@ menuControls.addEventListener("click", () => {
 
 //Automatic changing image functionality
 
-const slidingImages = [
-  "assets/slide-1.jpg",
-  "assets/palm-1.jpg",
-  "assets/grassland-1.jpg",
-  "assets/slide-3.jpg",
-  "assets/slide-4.jpg",
-];
-const slidingImageHolder = document.querySelector(".banner-image");
+// const slidingImages = [
+//   "assets/slide-1.jpg",
+//   "assets/palm-1.jpg",
+//   "assets/grassland-1.jpg",
+//   "assets/slide-3.jpg",
+//   "assets/slide-4.jpg",
+// ];
+// // const slidingImageHolder = document.querySelector(".banner-image");
 
-let i = 0;
-function changeImage() {
-  if (i === slidingImages.length - 1) {
-    i = 0;
-  } else {
-    i++;
-  }
-  slidingImageHolder.src = slidingImages[i];
-}
+// let i = 0;
+// function changeImage() {
+//   if (i === slidingImages.length - 1) {
+//     i = 0;
+//   } else {
+//     i++;
+//   }
+//   slidingImageHolder.src = slidingImages[i];
+// }
 
-setInterval(changeImage, 3000);
+// setInterval(changeImage, 3000);
 
 //End of Automatic changing image functionality
 
