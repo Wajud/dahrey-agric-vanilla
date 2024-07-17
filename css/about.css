@@ -191,6 +191,10 @@ button{
    margin: 15px 0 0px;
 }
 
+.ceo img{
+   max-height: 500px;
+}
+
 .ceo .bio{
    margin: 15px 0;
    line-height: 28px;
@@ -293,15 +297,25 @@ button{
    /* Team Section */
 
    .ceo{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      /* display: grid;
+      grid-template-columns: 1fr 1fr; */
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      justify-content: center;
       gap: 40px;
       align-items: stretch;
       margin-top: 40px;
    }
 
+   .ceo > div{
+      width: 45%;
+   }
+
    .ceo img{
       object-fit: cover;
+   
    
    }
 
@@ -331,7 +345,21 @@ button{
       /* flex-wrap: wrap; */
    }
 
+   .team-members img{
+      object-fit: cover;
+   }
 
+   img.logistics{
+      object-position: 55% 10%;
+   }
+
+   img.production-manager{
+      object-position: 40% 10%;
+   }
+
+   img.farm-operatior{
+      object-position: 50% 1%;
+   }
   
    /* End of Team Section */
 
