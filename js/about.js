@@ -51,6 +51,9 @@ readLess.addEventListener("click", () => {
 
 //Details and Summary Functionality for ceo story
 
+const team = document.getElementById("team");
+const teamTop = team.getBoundingClientRect().top;
+
 const ceoReadMore = document.querySelector(".ceo-readMore");
 const ceoReadLess = document.querySelector(".ceo-readLess");
 const ceoStory = document.querySelector(".ceo-story");
@@ -65,6 +68,7 @@ ceoReadLess.addEventListener("click", () => {
   ceoReadMore.classList.remove("hide");
   ceoReadLess.classList.add("hide");
   ceoStory.classList.add("hide");
+  window.scrollTo(0, teamTop);
 });
 
 //End of Details and Summary Functionality for ceo story
@@ -83,4 +87,5 @@ desktopReadLess.addEventListener("click", () => {
   desktopReadMore.classList.remove("hide");
   desktopReadLess.classList.add("hide");
   otherStory.classList.add("hide");
+  window.scrollTo(0, teamTop);
 });

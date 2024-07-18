@@ -382,6 +382,8 @@ button{
    .team-members{
       justify-content: center;
       margin-top: 30px;
+      width: 85%;
+      margin: 30px auto 0;
    }
    
 
