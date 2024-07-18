@@ -48,3 +48,39 @@ readLess.addEventListener("click", () => {
 });
 
 //Details and Summary  Functionality
+
+//Details and Summary Functionality for ceo story
+
+const ceoReadMore = document.querySelector(".ceo-readMore");
+const ceoReadLess = document.querySelector(".ceo-readLess");
+const ceoStory = document.querySelector(".ceo-story");
+
+ceoReadMore.addEventListener("click", () => {
+  ceoReadMore.classList.add("hide");
+  ceoReadLess.classList.remove("hide");
+  ceoStory.classList.remove("hide");
+});
+
+ceoReadLess.addEventListener("click", () => {
+  ceoReadMore.classList.remove("hide");
+  ceoReadLess.classList.add("hide");
+  ceoStory.classList.add("hide");
+});
+
+//End of Details and Summary Functionality for ceo story
+
+const otherStory = document.querySelector(".other-story");
+const desktopReadMore = document.querySelector(".desktop-readMore");
+const desktopReadLess = document.querySelector(".desktop-readLess");
+
+desktopReadMore.addEventListener("click", () => {
+  desktopReadLess.classList.remove("hide");
+  desktopReadMore.classList.add("hide");
+  otherStory.classList.remove("hide");
+});
+
+desktopReadLess.addEventListener("click", () => {
+  desktopReadMore.classList.remove("hide");
+  desktopReadLess.classList.add("hide");
+  otherStory.classList.add("hide");
+});

@@ -153,11 +153,14 @@ button{
 .readMore{
    color: green;
    border: 1px solid green;
+   margin: 0 auto;
 }
 
 .readLess{
    color: red;
    border: 1px solid red;
+   margin: 0 auto;
+
  
 }
 
@@ -169,7 +172,8 @@ button{
 .team{
    padding: 250px 25px 0px;
    margin-bottom: -50px;
-   margin-top: -100px
+   margin-top: -100px;
+   text-align: justify;
 }
 
 .team h2{
@@ -182,24 +186,43 @@ button{
    border-radius: 5px;
 }
 
+.image-section h3{
+   margin-top: 5px;
+}
 
 .image-section h3, .image-section p{
-   display: none;
-}
+   text-align: center;
 
-.ceo h3{
-   margin: 15px 0 0px;
-}
-
-.ceo img{
-   max-height: 500px;
 }
 
 .ceo .bio{
    margin: 15px 0;
    line-height: 28px;
-   /* font-size: 12px; */
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+  
 }
+
+.team .mobile-bio, .team .mobile-bio > div {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+
+.team .mobile-bio > div.hide{
+   display: none;
+
+}
+.ceo .desktop-bio{
+   display: none;
+}
+
+.team .readLess, .team .readMore{
+   margin: 15px auto 40px;
+}
+
 
 
 .team-members{
@@ -223,11 +246,20 @@ button{
 
 
 .team-members img{
-   width: 100px;
-   height: 100px;
-   border-radius: 50%;
+   width: 200px;
+   height: 200px;
+   border-radius: 2px;
    object-fit: cover;
-   object-position: 90% 50%;
+
+}
+
+.team-members img.farm-operator{
+   object-position: 50% 0%;
+ 
+}
+
+.team-members p.role{
+   margin: 3px auto;
 }
 
 
@@ -235,6 +267,15 @@ button{
    object-position: 20% 50%;
 }
 
+.other-story{
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.other-story.hide{
+   display: none;
+}
 
 /* End of Team section */
 
@@ -297,8 +338,7 @@ button{
    /* Team Section */
 
    .ceo{
-      /* display: grid;
-      grid-template-columns: 1fr 1fr; */
+    
       width: 80%;
       margin: 0 auto;
       display: flex;
@@ -313,24 +353,29 @@ button{
       width: 45%;
    }
 
-   .ceo img{
-      object-fit: cover;
    
-   
+
+   .ceo .mobile-bio{
+   display: none;
    }
 
+   .ceo .desktop-bio{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+   }
 
    .image-section{
       margin-top: 15px;
    }
 
-   .image-section h3, .image-section p{
-      display: block;
-
+   .image-section h3{
+      margin-top: 0px;
    }
-
-   .ceo-profile h3, .ceo-profile p.role{
-      display: none;
+   
+   .image-section h3, .image-section p{
+      text-align: left;
+   
    }
 
 
@@ -342,23 +387,11 @@ button{
 
    .team-members div{
       width: 20%;
-      /* flex-wrap: wrap; */
+     
    }
 
    .team-members img{
       object-fit: cover;
-   }
-
-   img.logistics{
-      object-position: 55% 10%;
-   }
-
-   img.production-manager{
-      object-position: 40% 10%;
-   }
-
-   img.farm-operatior{
-      object-position: 50% 1%;
    }
   
    /* End of Team Section */
