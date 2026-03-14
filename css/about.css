@@ -279,6 +279,74 @@ button{
 
 /* End of Team section */
 
+/* Nafdac section */
+
+
+.nafdac-section {
+  width: 85%;
+  max-width: 900px;
+  margin: 180px auto 0px;
+  padding: 40px 20px;
+  border: 2px solid rgb(32, 126, 32);
+  border-radius: 5px;
+ 
+}
+
+
+.nafdac-section .img-container{
+   display: none;
+}
+
+.nafdac-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+text-align:center;
+}
+
+
+
+.nafdac-section p {
+
+  line-height: 1.6;
+  margin-bottom: 25px;
+  text-align:center;
+
+}
+
+.nafdac-number {
+  font-size: 18px;
+  background: #ffffff;
+  padding: 15px 20px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+   gap: 7px;
+   width: fit-content;
+   text-align: center;
+
+}
+
+.nafdac-section .content{
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+.nafdac-section img{
+   width: 40rem;
+
+}
+
+
+.nafdac-number span {
+  color: rgb(32, 126, 32);
+  font-weight: bold;
+  
+}
+
+/* End of Nafdac Section */
 
 /* Media Query */
 
@@ -353,8 +421,6 @@ button{
       width: 45%;
    }
 
-   
-
    .ceo .mobile-bio{
    display: none;
    }
@@ -397,6 +463,32 @@ button{
    }
   
    /* End of Team Section */
+
+
+
+.nafdac-number {
+
+  margin: 30px 0 0;
+  flex-direction: row;
+ gap: 10px;
+
+}
+
+.nafdac-section p {
+ padding: 15px 50px 25px 0;
+ text-align: left;
+}
+
+.nafdac-section h2{
+   text-align: left;
+}
+
+
+
+.nafdac-section .img-container{
+   display: block;
+}
+
 
 
 }

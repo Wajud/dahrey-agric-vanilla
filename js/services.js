@@ -18,8 +18,9 @@ const allImages = {
   ],
 
   palmOilImages: [
-    "../assets/palm-oil.jpeg",
-    "../assets/palm-oil-production.jpeg",
+    "../assets/palm-oil-1.jpg",
+    "../assets/palm-oil-2.jpg",
+    "../assets/palm-oil-3.jpg",
   ],
 
   garriImages: ["../assets/garri-1.jpg", "../assets/garri-2.jpg"],
